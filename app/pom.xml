@@ -13,9 +13,9 @@
 	</parent>
 
 	<groupId>com.cap</groupId>
-	<artifactId>test-service</artifactId>
+	<artifactId>test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>test-service</name>
+	<name>test</name>
 
 	 <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -84,7 +84,7 @@
     </dependencies>
 
     <build>
-        <finalName>authentication-service</finalName>
+        <finalName>test</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
