@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header-links">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <script src="/static/js/header.js"></script>
+</head>
+<body>
+    <div th:fragment="header" class="top-bar">
+        <div class="left-items">
+            <div class="dropdown">
+                <img id="auth-image" src="/static/images/authicon.png" alt="Authentication Service" onclick="toggleDropdown('authDropdownContent','auth-image')">
+                <div id="authDropdownContent" class="dropdown-content">
+                    <div class="dropdown-item" id="authLoginPage"><a href="/login"> Login </a> </div>
+                    <div class="dropdown-item req-login" id="authHomePage"><a href="/home"> Home </a></div>
+                    <div class="dropdown-item req-admin" id="authAdminPage" ><a href="/admin">Admin</a></div>
+                </div>
+            </div>
+            
+            <div class="dropdown req-login">
+                <img id="prod-image" src="/static/images/producticon.png" alt="Product Service" onclick="toggleDropdown('prodDropdownContent','prod-image')">
+                <div id="prodDropdownContent" class="dropdown-content">
+                    <div class="dropdown-item" id="prodHomePage"><a  th:href="${productServiceUrl + '/home'}">Home</a></div>
+                    <div class="dropdown-item req-admin" id="prodAdminPage" ><a th:href="${productServiceUrl + '/admin'}">Admin</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-items">
+            <div class="dropdown req-login">
+                <img id="user-image" src="/static/images/favicon.png" alt="User Image" onclick="toggleRotateDropdown('userDropdownContent','user-image')">
+                <div id="userDropdownContent" class="dropdown-content">
+                    <div class="dropdown-item" id="userName"></div>
+                    <div class="dropdown-item" id="userEmail"></div>
+                    <div class="divider"></div>            
+                    <div class="logout-parent">
+                        <a onclick="logout(event)" class="logout-button">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

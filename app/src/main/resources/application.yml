@@ -1,0 +1,39 @@
+api:
+    security:
+        token: 
+            secret: ${JWT_SECRET:default-secret-key}
+    endpoint:
+        server:
+            port: 8091
+        auth-db:
+            host: mysql-db.chg7ujdhhts7.eu-west-3.rds.amazonaws.com
+            port: 3306
+            name: authentication_service
+            pass: rootroot # should be replaced with an authentication service user
+            user: root
+        product-service:
+            host: localhost
+            port: 8092
+            adress: "http://${api.endpoint.product-service.host}:${api.endpoint.product-service.port}"
+
+
+
+
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://${api.endpoint.auth-db.host}:${api.endpoint.auth-db.port}/${api.endpoint.auth-db.name}
+        username: ${api.endpoint.auth-db.user}
+        password: ${api.endpoint.auth-db.pass}
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: false # show sql logs
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect # org.hibernate.dialect.MySQLDialect
+    mvc:
+       static-path-pattern: /static/**
+
+server:
+    port: ${api.endpoint.server.port}
