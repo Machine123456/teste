@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Machine123456/authentication-service.git']])
+                checkout scmGit(branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/Machine123456/authentication-service.git']])
             }
         }
         
@@ -25,7 +25,7 @@ pipeline {
         stage ("Push to Docker Hub") {
                 steps {
                     script{
-                        withDockerRegistry([ credentialsId: "dockerHubAccont", url: "" ]) {
+                        withDockerRegistry([ credentialsId: "dockerHubAccount", url: "" ]) {
                             dockerImage.push("authentication-service-1.$BUILD_NUMBER")
                         }
                     }
