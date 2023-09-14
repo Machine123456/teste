@@ -1,1 +1,17 @@
+com\cap\authenticationservice\security\SecurityFiler.class
+com\cap\authenticationservice\model\Role.class
+com\cap\authenticationservice\security\TokenService.class
+com\cap\authenticationservice\model\User$UserBuilder.class
+com\cap\authenticationservice\controller\ModelController.class
+com\cap\authenticationservice\repository\UserRepository.class
+com\cap\authenticationservice\repository\RoleRepository.class
+com\cap\authenticationservice\controller\UserController.class
+com\cap\authenticationservice\dto\UserRequest.class
+com\cap\authenticationservice\dto\UserResponse$UserResponseBuilder.class
+com\cap\authenticationservice\service\UserService.class
+com\cap\authenticationservice\dto\UserResponse.class
+com\cap\authenticationservice\controller\AuthenticationController.class
+com\cap\authenticationservice\service\AuthenticationService.class
+com\cap\authenticationservice\model\User.class
 com\cap\authenticationservice\AuthenticationServiceApplication.class
+com\cap\authenticationservice\security\WebSecurityConfig.class

@@ -1,1 +1,15 @@
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\service\UserService.java
 C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\AuthenticationServiceApplication.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\repository\RoleRepository.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\security\TokenService.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\service\AuthenticationService.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\dto\UserRequest.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\repository\UserRepository.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\controller\ModelController.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\security\SecurityFiler.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\controller\AuthenticationController.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\model\Role.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\controller\UserController.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\model\User.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\dto\UserResponse.java
+C:\Users\analao\Capgemini\Projects\Test\teste\app\src\main\java\com\cap\authenticationservice\security\WebSecurityConfig.java
